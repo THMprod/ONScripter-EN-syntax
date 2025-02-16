@@ -1,0 +1,470 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "nscr",
+	"patterns": [
+		{
+			"include": "#start_end"
+		},
+		{
+			"include": "#start_end2"
+		},
+		{
+			"include": "#text_window"
+		},
+		{
+			"include": "#text_print"
+		},
+		{
+			"include": "#click_wait"
+		},
+		{
+			"include": "#cursor"
+		},
+		{
+			"include": "#graphic_print"
+		},
+		{
+			"include": "#graphic_effect"
+		},
+		{
+			"include": "#bar_prnum"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#sound"
+		},
+		{
+			"include": "#anime"
+		},
+		{
+			"include": "#select"
+		},
+		{
+			"include": "#jump"
+		},
+		{
+			"include": "#trap"
+		},
+		{
+			"include": "#btn"
+		},
+		{
+			"include": "#wait_timer"
+		},
+		{
+			"include": "#calculation"
+		},
+		{
+			"include": "#calculation_def"
+		},
+		{
+			"include": "#conditional"
+		},
+		{
+			"include": "#right_click"
+		},
+		{
+			"include": "#lookback"
+		},
+		{
+			"include": "#lookback"
+		},
+		{
+			"include": "#kidoku"
+		},
+		{
+			"include": "#fileaccess"
+		},
+		{
+			"include": "#saveload"
+		},
+		{
+			"include": "#extra"
+		},
+		{
+			"include": "#extra2"
+		},
+		{
+			"include": "#special"
+		},
+		{
+			"include": "#special_mode"
+		},
+		{
+			"include": "#archive"
+		},
+		{
+			"include": "#info_print"
+		},
+		{
+			"include": "#info_get"
+		},
+		{
+			"include": "#window_menu"
+		},
+		{
+			"include": "#system_customize"
+		},
+		{
+			"include": "#screenshot"
+		},
+		{
+			"include": "#btn_extension"
+		},
+		{
+			"include": "#ruby"
+		},
+		{
+			"include": "#demo"
+		},
+		{
+			"include": "#backlog_customize"
+		},
+		{
+			"include": "#tag"
+		},
+		{
+			"include": "#develop_support"
+		},
+		{
+			"include": "#external_command"
+		},
+		{
+			"include": "#csv"
+		},
+		{
+			"include": "#textbtn"
+		},
+		{
+			"include": "#extension_sprite"
+		},
+		{
+			"include": "#newbtn"
+		},
+		{
+			"include": "#label"
+		},
+		{
+			"include": "#const"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#dialogue"
+		}
+	],
+	"repository": {
+		"start_end": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(\\*define|\\*start)\\b"
+				}]
+		},
+		"start_end2": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(definereset|end|game|reset)\\b"
+				}]
+		},
+		"text_window": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(btnnowindowerase|erasetextwindow|font|gettext|noteraseman|setwindow|setwindow2|setwindow3|setwindow4|tateyoko|textoff|texton|textspeeddefault|windowchip|windoweffect)\\b"
+				}]
+		},
+		"text_print": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(br|defaultfont|locate|puttextif|shadedistance|textclear|textspeed)\\b"
+				}]
+		},
+		"click_wait": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(autoclick|click|clickstr|clickvoice|linepage|lrclick)\\b"
+				}]
+		},
+		"cursor": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(autoclick|click|clickstr|clickvoice|linepage|lrclick)\\b"
+				}]
+		},
+		"graphic_print": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(allsphide|allspresumeallsphide|amsp|bg|bgalia|bgcopy|blt|cell|cl|csp|effectskip|getspmode|getspsize|humanorder|humanpos|humanz|ld|lsp|lsph|msp|ofscpyblt|print|repaint|spfont|spstr|strsp|strsph|tal|transmode|underline|vsp|windowback)\\b"
+				}]
+		},
+		"graphic_effect": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(effect|effectblank|effectcut|flushout|monocro|mosaicin|mosaicout|nega|quake|quakex|quakey|seteffectspeed)\\b"
+				}]
+		},
+		"bar_prnum": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(bar|barclear|prnum|prnumclear)\\b"
+				}]
+		},
+		"variable": {
+			"patterns": [{
+				"name": "variable.nscr",
+				"match": "(%[a-zA-Z0-9_]*|\\$[a-zA-Z0-9_]*)\\b"
+				}]
+		},
+		"sound": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(bgm|bgmdownmode|bgmfadein|bgmfadeout|bgmonce|bgmstop|bgmvol|cdfadeout|chkcdfile|chkcdfile_ex|chvol|dsound|dv|dwave|dwaveload|dwaveloop|dwaveplay|dwaveplayloop|dwavestop|getbgmvol|getmp3vol|getsevol|getvoicevol|loopbgm|loopbgmstop|mp3|mp3fadein|mp3fadeout|mp3loop|mp3save|mp3stop|mp3vol|mv|play|playonce|playstop|sevol|stop|v|voicevol|wave|waveloop|wavestop)\\b"
+				}]
+		},
+		"anime": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(avi|movie|mpegplay)\\b"
+				}]
+		},
+		"select": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(select|selectcolor|selectvoice|selgosub|selnum)\\b"
+				}]
+		},
+		"jump": {
+			"patterns": [{
+				"name": "keyword.control.nscr",
+				"match": "\\b(gosub|goto|jumpb|jumpf|return|skip|tablegoto)\\b"
+				}]
+		},
+		"trap": {
+			"patterns": [{
+				"name": "keyword.control.nscr",
+				"match": "\\b(lr_trap|lr_trap2|r_trap|trap|trap2)\\b"
+				}]
+		},
+		"btn": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(btn|btndef|btntime|btntime2|btnwait|btnwait2|cellcheckexbtn|cellcheckspbtn|exbtn|exbtn_d|getbtntimer|spbtn|transbtn)\\b"
+				}]
+		},
+		"wait_timer": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(delay|gettimer|resettimer|spwait|wait|waittimer)\\b"
+				}]
+		},
+		"calculation": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(add|atoi|cos|dec|div|inc|itoa|itoa2|len|mid|mod|mov|mov10|mov3|mov4|mov5|mov6|mov7|mov8|mov9|movl|mul|rnd|rnd2|sin|sub|tan)\\b"
+			}]
+		},
+		"calculation_def": {
+			"patterns": [{
+				"name": "support.type",
+				"match": "\\b(dim|intlimit|numalias|stralias)\\b"
+			}]
+		},
+		"conditional": {
+			"patterns": [{
+				"name": "keyword.control.nscr",
+				"match": "\\b(break|cmp|fchk|for|if|lchk|next|notif|to)\\b"
+				}]
+		},
+		"right_click": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(menuselectcolor|menuselectvoice|menusetwindow|rgosub|rlookback|rmenu|rmode|roff|savename)\\b"
+				}]
+		},
+		"lookback": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(lookbackbutton|lookbackcolor|lookbackflush|lookbackoff|lookbackon|lookbacksp|lookbackvoice|maxkaisoupage)\\b"
+				}]
+		},
+		"kidoku": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(kidokumode|kidokuskip|mode_wave_demo|skipoff)\\b"
+				}]
+		},
+		"fileaccess": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(filelog|globalon|labellog)\\b"
+				}]
+		},
+		"saveload": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(autosaveoff|errorsave|getsavestr|loadgame|loadgosub|savedir|savefileexist|savegame|savegame2|savenumber|saveoff|saveon|savepoint)\\b"
+				}]
+		},
+		"extra": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(addkinsoku|addnsadirnsa|clickpos|clickskippageefsub|english|fileexist|fileremove|getparam|input|inputnum|inputstr|kinsoku|labelexist|menu_dwavvol|mesbox|minimizewindow|noloaderror|okcancelbox|readfile|setkinsoku|split|systemcall|textcolor|textfield|yesnobox)\\b"
+				}]
+		},
+		"extra2": {
+			"patterns": [{
+				"name": "support.type",
+				"match": "\\b(defsub)\\b"
+				}]
+		},
+		"special": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(automode|automode_time|defbgmvol|defmp3vol|defsevol|defvoicevol|mode_ext|mode_saya)\\b"
+				}]
+		},
+		"special_mode": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "(;\\$V[0-9]+G[0-9]+S[0-9]+,[0-9]+L[0-9]+|;mode320,value[0-9]+|;mode400,value[0-9]+|;mode800,value[0-9]+|;mode320|;mode400|;mode800|;value[0-9]+)"
+				}]
+		},
+		"archive": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(arc|exec_dll|getret|layermessage|nsa|nsadir|setlayer|soundpressplgin|spi)\\b"
+				}]
+		},
+		"info_print": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(caption|versionstr)\\b"
+				}]
+		},
+		"info_get": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(date|getini|getreg|getversion|getwindowsize|savetime|time)\\b"
+				}]
+		},
+		"window_menu": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(defaultspeed|deletemenu|insertmenu|isfull|killmenu|menu_click_def|menu_click_page|menu_full|menu_window|resetmenu)\\b"
+				}]
+		},
+		"system_customize": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(checkkey|csel|cselbtn|cselgoto|getcselnum|getcselstr|getcursorpos|getcursorpos2|getmouseover|getskipoff|ispage|isskip|luacall|luasub|nextcsel|selectbtnwait|texec|texec2|textbtnwait|textgosub)\\b"
+				}]
+		},
+		"screenshot": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(deletescreenshot|getscreenshot|savescreenshot|savescreenshot2)\\b"
+				}]
+		},
+		"btn_extension": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(btnarea|btndown|getcursor|getenter|getfunction|getinsertInsert|getmclick|getmousepos|getpage|gettabtab|getzxc|isdown|spclclk|useescspc|usewheel)\\b"
+				}]
+		},
+		"ruby": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(rubyoff|rubyon|rubyon2)\\b"
+				}]
+		},
+		"demo": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(draw|drawbg|drawbg2|drawclear|drawfill|drawsp|drawsp2|drawsp3|drawtext)\\b"
+				}]
+		},
+		"backlog_customize": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(checkpage|getlog|getlogtext|gettaglog|logsp|logsp2|texthide|textshow)\\b"
+				}]
+		},
+		"tag": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(gettag|indent|pretextgosub|zenkakko)\\b"
+				}]
+		},
+		"develop_support": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(bmpcut|bw2a|bw2a3|chainbmp|createdummy|debuglog)\\b"
+				}]
+		},
+		"external_command": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(shell|winexec)\\b"
+				}]
+		},
+		"csv": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(csvclose|csveof|csvopen|csvread|csvwrite)\\b"
+				}]
+		},
+		"textbtn": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(erasetextbtn|gettextbtnstr|linkcolor|textbtnoff|textbtnstart|textexbtn)\\b"
+				}]
+		},
+		"extension_sprite": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(allsp2hide|allsp2resume|amsp2|csp2|lsp2|lsp2add|lsp2sub|lsph2|lsph2add|lsph2sub|msp2|vsp2)\\b"
+				}]
+		},
+		"newbtn": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "\\b(bclear|bcursor|bdef|bdown|bexec|bsp|btime|btrans)\\b"
+				}]
+		},
+		"label": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(\\*[a-zA-Z][a-zA-Z0-9_]*)\\b"
+				}]
+		},
+		"const": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b([A-Z0-9_]+)\\b"
+				}]
+		},
+		"strings": {
+			"name": "string.quoted.double.nscr",
+			"begin": "\"",
+			"end": "\""
+		},
+		"comments": {
+			"patterns": [{
+				"name":"comment.line.nscr",
+				"match": ";.*"
+			}]
+		},
+		"dialogue": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "`"
+			}]
+		}
+	},
+	"scopeName": "source.txt"
+}

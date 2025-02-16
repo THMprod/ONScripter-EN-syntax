@@ -1,0 +1,27 @@
+{
+    "name": "ONScripter-EN-syntax",
+    "displayName": "ONScripter-En Syntax",
+    "publisher": "ThomasHiliol",
+    "description": "For ONScripter-EN syntax highlight",
+    "icon": "images/Hisui-ThisChair.png",
+    "version": "1.0.3",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nscr",
+            "aliases": ["nscr", "nscr"],
+            "extensions": [".txt", ".utf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nscr",
+            "scopeName": "source.txt",
+            "path": "./syntaxes/nscr.tmLanguage.json"
+        }]
+    }
+}
