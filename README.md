@@ -9,6 +9,10 @@ Based on the Sky Maker's [NScripter Syntax](https://marketplace.visualstudio.com
 
 ## Release Notes
 
+### 1.0.4
+
+Add "exclamcommand" for syntax highlightning
+
 ### 1.0.3
 
 Add an icon (very important)

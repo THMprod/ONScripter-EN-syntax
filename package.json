@@ -4,7 +4,7 @@
     "publisher": "ThomasHiliol",
     "description": "For ONScripter-EN syntax highlight",
     "icon": "images/Hisui-ThisChair.png",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "vscode": "^1.52.0"
     },

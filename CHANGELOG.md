@@ -1,3 +1,7 @@
+# [Update 1.0.4]
+
+- Add "exclamcommand" for syntax highlightning
+
 # [Update 1.0.3]
 
 - Add an icon (very important)

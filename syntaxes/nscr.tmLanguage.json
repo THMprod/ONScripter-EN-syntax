@@ -157,6 +157,9 @@
 		},
 		{
 			"include": "#dialogue"
+		},
+		{
+			"include": "#exclamcommand"
 		}
 	],
 	"repository": {
@@ -463,6 +466,12 @@
 			"patterns": [{
 				"name": "keyword.other.nscr",
 				"match": "`"
+			}]
+		},
+		"exclamcommand": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "!sd|!d|!s|!w"
 			}]
 		}
 	},
