@@ -1,3 +1,7 @@
+# [Update 1.0.5]
+
+- Add "end of line" and ignore for syntax highlightning
+
 # [Update 1.0.4]
 
 - Add "exclamcommand" for syntax highlightning

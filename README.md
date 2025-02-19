@@ -7,7 +7,31 @@ Visual Studio Code extension providing syntax highlighting for ONScripter-EN sou
 
 Based on the Sky Maker's [NScripter Syntax](https://marketplace.visualstudio.com/items?itemName=SkyMaker.nscripter-syntax) v.1.0.0 Initial Relase
 
+## To package it
+
+install the nodejs package
+
+```bash
+npm install -g @vscode/vsce
+```
+
+to package the VSCode Extension :
+
+```bash
+cd CI/SkyMaker.nscripter-syntax-1.0.0
+vsce package
+```
+
 ## Release Notes
+
+### 1.0.5
+
+Add explicit end of line for Onscripter-EN ('@','\')
+Add the ignore end of line ('_')
+Add GPL2 licence text (cuz why not?)
+Add a repository line for "vsce package" command to not request it
+Add a .gitignore (for NOT publish .vsix by error in the code on Github)
+Add a tutorial to package this extension on the REAME.md (this file)
 
 ### 1.0.4
 

@@ -160,6 +160,9 @@
 		},
 		{
 			"include": "#exclamcommand"
+		},
+		{
+			"include": "#endofline"
 		}
 	],
 	"repository": {
@@ -472,6 +475,12 @@
 			"patterns": [{
 				"name": "keyword.other.nscr",
 				"match": "!sd|!d|!s|!w"
+			}]
+		},
+		"endofline": {
+			"patterns": [{
+				"name": "keyword.other.nscr",
+				"match": "(@|_|\\\\)"
 			}]
 		}
 	},

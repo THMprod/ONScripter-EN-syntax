@@ -3,8 +3,9 @@
     "displayName": "ONScripter-En Syntax",
     "publisher": "ThomasHiliol",
     "description": "For ONScripter-EN syntax highlight",
+    "repository": {},
     "icon": "images/Hisui-ThisChair.png",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "engines": {
         "vscode": "^1.52.0"
     },
