@@ -9,7 +9,7 @@ Based on the Sky Maker's [NScripter Syntax](https://marketplace.visualstudio.com
 
 ## To package it
 
-install the nodejs package
+install the nodejs' vsce package
 
 ```bash
 npm install -g @vscode/vsce
@@ -18,7 +18,6 @@ npm install -g @vscode/vsce
 to package the VSCode Extension :
 
 ```bash
-cd CI/SkyMaker.nscripter-syntax-1.0.0
 vsce package
 ```
 
