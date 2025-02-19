@@ -27,10 +27,15 @@ vsce package
 ### 1.0.5
 
 Add explicit end of line for Onscripter-EN ('@','\')
+
 Add the ignore end of line ('_')
+
 Add GPL2 licence text (cuz why not?)
+
 Add a repository line for "vsce package" command to not request it
+
 Add a .gitignore (for NOT publish .vsix by error in the code on Github)
+
 Add a tutorial to package this extension on the REAME.md (this file)
 
 ### 1.0.4
